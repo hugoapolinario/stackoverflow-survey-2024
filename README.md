@@ -1,4 +1,3 @@
-# stackoverflow-survey-2024
 # Stack Overflow Developer Survey — 2024 Global Trends Analysis
 
 **IBM Data Analyst Professional Certificate · Capstone Project**  
@@ -17,25 +16,24 @@ Hugo Apolinário · June 2025
 3. [Methodology](#methodology)
 4. [Key findings](#key-findings)
 5. [Dashboard](#dashboard)
-6. [How to run](#how-to-run)
-7. [Technologies used](#technologies-used)
-8. [License](#license)
+6. [Technologies used](#technologies-used)
+7. [License](#license)
 
 ---
 
 ## About the project
 
-Every year, Stack Overflow surveys tens of thousands of developers worldwide to capture 
-the state of the industry. This project analyses the **2024 edition** — covering 65,000+ 
-responses — to uncover which programming languages, databases, and cloud platforms 
-are dominant today, and which are gaining ground for tomorrow.
+Every year, Stack Overflow surveys tens of thousands of developers worldwide 
+to capture the state of the industry. This project analyses the **2024 edition** 
+— covering 65,000+ responses — to uncover which programming languages, databases, 
+and cloud platforms are dominant today, and which are gaining ground for tomorrow.
 
 The goal is to produce actionable insights that can inform decisions around hiring 
-strategy, technology investment, and learning paths for organisations and individual 
-developers alike.
+strategy, technology investment, and learning paths for organisations and 
+individual developers alike.
 
-**Audience:** Tech leaders, HR managers, educators, and developers planning their 
-next skill investment.
+**Audience:** Tech leaders, HR managers, educators, and developers planning 
+their next skill investment.
 
 ---
 
@@ -55,7 +53,7 @@ next skill investment.
 
 **Data wrangling (Python + Pandas):**
 - Removed duplicate entries and handled missing values
-- Normalised multi-response columns (e.g. a respondent listing 5 languages 
+- Normalised multi-response columns (e.g. a respondent listing 5 languages
   was expanded into separate rows for accurate counts)
 - Split and aggregated text columns to enable "top 10" ranking analysis
 
@@ -68,27 +66,27 @@ Looker Studio for the interactive dashboards.
 
 ### 1. Programming languages
 - **JavaScript, SQL, and HTML/CSS** remain the top 3 most-used languages globally.
-- **Python and TypeScript** are growing fast — both appear in the "languages to 
-  watch next year" top 5.
-- **Go and Rust** are emerging as preferred choices among developers planning 
+- **Python and TypeScript** are growing fast — both appear in the top 5 of
+  "languages to watch next year."
+- **Go and Rust** are emerging as preferred choices among developers planning
   their next skill upgrade.
 
 ### 2. Databases
-- **PostgreSQL** leads both current usage (11,514 respondents) and future demand 
+- **PostgreSQL** leads both current usage (11,514 respondents) and future demand
   (12,193 respondents) — the only database to top both charts.
-- **Redis and MongoDB** have gone mainstream, reflecting a broader shift toward 
+- **Redis and MongoDB** have gone mainstream, reflecting a broader shift toward
   flexible, high-performance data platforms.
-- **Supabase** is a notable new entrant in the "desired" list, signalling early 
-  adoption momentum.
+- **Supabase** is a notable new entrant in the "desired" list, signalling
+  early adoption momentum.
 
 ### 3. Cloud platforms
 - **AWS** is the dominant cloud platform, far ahead of Google Cloud and Azure.
 - **React and Node.js** lead web framework usage across all experience levels.
 
 ### 4. Salary by language
-- **Swift ($130,801), Python ($114,383), and C++ ($113,883)** command the highest 
-  average annual salaries.
-- SQL ($84,793) and PHP ($84,727) sit at the lower end — reinforcing the value 
+- **Swift ($130,801), Python ($114,383), and C++ ($113,883)** command the
+  highest average annual salaries.
+- SQL ($84,793) and PHP ($84,727) sit at the lower end — reinforcing the value
   of pairing SQL with a higher-salary language like Python.
 
 ### 5. Demographics
@@ -100,29 +98,17 @@ Looker Studio for the interactive dashboards.
 
 ## Dashboard
 
-Interactive dashboards were built in Looker Studio, covering:
-- Current technology usage (languages, platforms, frameworks by experience level)
-- Future technology trends (desired databases, platforms, frameworks)
-- Respondent demographics (age, geography, education)
+Interactive dashboards were built in Looker Studio covering three themes:
+- **Current technology usage** — top languages, platforms, and frameworks
+  by experience level
+- **Future technology trends** — desired databases, platforms, and frameworks
+  for next year
+- **Demographics** — respondent age groups, geographic distribution,
+  and education levels
 
-> 📊 *[Add your Looker Studio link here once published]*  
-> 📸 *[Add a screenshot of your dashboard below]*
-
-![Dashboard preview](images/dashboard_preview.png)
-
----
-
-## How to run
-```bash
-git clone https://github.com/hugoapolinario/stackoverflow-survey-2024
-cd stackoverflow-survey-2024
-pip install -r requirements.txt
-jupyter notebook notebooks/survey_analysis.ipynb
-```
-
-The raw dataset is not included in this repo due to size. Download it directly from  
-[Stack Overflow Insights](https://insights.stackoverflow.com/survey) and place the  
-CSV in the `/data` folder.
+> Dashboard screenshots are available in the PDF presentation included
+> in this repository.  
+> A live Looker Studio link will be added once the dashboard is republished.
 
 ---
 
@@ -140,5 +126,6 @@ CSV in the `/data` folder.
 
 ## License
 
-This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.  
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE)
+for details.  
 Dataset: Stack Overflow Annual Developer Survey 2024 — licensed under ODbL.

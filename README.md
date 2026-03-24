@@ -16,8 +16,9 @@ Hugo Apolinário · June 2025
 3. [Methodology](#methodology)
 4. [Key findings](#key-findings)
 5. [Dashboard](#dashboard)
-6. [Technologies used](#technologies-used)
-7. [License](#license)
+6. [How to run](#how-to-run)
+7. [Technologies used](#technologies-used)
+8. [License](#license)
 
 ---
 
@@ -65,6 +66,7 @@ Looker Studio for the interactive dashboards.
 ## Key findings
 
 ### 1. Programming languages
+![Top programming languages](images/chart_01_languages_current.png)
 - **JavaScript, SQL, and HTML/CSS** remain the top 3 most-used languages globally.
 - **Python and TypeScript** are growing fast — both appear in the top 5 of
   "languages to watch next year."
@@ -109,6 +111,19 @@ Interactive dashboards were built in Looker Studio covering three themes:
 > Dashboard screenshots are available in the PDF presentation included
 > in this repository.  
 > A live Looker Studio link will be added once the dashboard is republished.
+
+---
+
+## How to run
+
+1. Clone this repository
+2. Open `stackoverflow_analysis.ipynb` in JupyterLab
+3. Run all cells top to bottom with `Shift + Enter`
+
+**Dependencies:**
+```
+pip install pandas matplotlib seaborn
+```
 
 ---
 
